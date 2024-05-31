@@ -9,6 +9,8 @@ services:
       args:
         - PUID=${PUID}
         - PGID=${PGID}
+    environment:
+      XDEBUG_SESSION: ''
     volumes:
       - ./../:/var/www/
 
